@@ -3,45 +3,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
-    border: none;
     text-decoration: none;
     transition: all .2s linear;
 }
 
-body {
+body{
     max-width: 1000px;
     position: relative;
     overflow-x: hidden;
     margin: auto;
-    box-shadow: 0 0 20px #979797;
+    box-shadow: 0 0 20px #c2c2c2;
 }
+
+.container .table {
+    width: 80%;
+    margin: 30px auto;
+    font-weight: 300;
+    background-color: rgba(86, 107, 110, 0.05);
+  }
+  
+  .container .table thead {
+    background-color: #629ce7;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .container .table tbody {
+    font-size: 15px;
+  }
+  
+  .container .table tr th,
+  td {
+    padding: 12px;
+  }
+  
+  .container .table tbody tr td:nth-child(1),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+    text-align: center;
+  }
+  
+  .container .table tbody tr:nth-child(even) {
+    background-color: #e0e7e7;
+  }
+  
+  .container .table tbody tr:nth-child(even):hover,
+  .container .table tbody tr:nth-child(odd):hover {
+    background-color: #d9ddde;
+  }
+  
+  .container .table tfoot {
+    background-color: #629ce7;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+  }
 
 .container{
     width: 100%;
-    margin: 20px auto;
-    padding: 3px 0 0 0;
+    margin: 30px auto;
+    padding: 4px 0 0 0;
 }
 
 .header{
     margin: 20px;
     opacity: .5;
-}
-
-.circle{
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-.square{
-    width: 500px;
-    height: 150px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 10%;
 }
 
 .navbar{
@@ -59,13 +87,14 @@ body {
 }
 
 .navbar a:hover{
-    background-color:#084d9c;
+    background-color: #084d9c;
 }
 
 .hero{
     padding: 20px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     text-align: justify;
+    width: 70%;
 }
 
 .hero h1, p, button{
@@ -73,12 +102,12 @@ body {
 }
 
 .hero button{
-    height: 40px;
-    margin-top: 20px;
+    height: 30px;
+    margin-top: 10px;
     color: white;
     background-color: #3684de;
     padding: 10px 20px;
-    border-radius: 5%;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -110,7 +139,7 @@ body {
 
 .wrapper .main .cards .card{
     padding: 20px;
-    background-color: aliceblue;
+    background-color: rgb(232, 237, 238);
     text-align: center;
     width: 206px;
 }
@@ -120,12 +149,12 @@ body {
 }
 
 .wrapper .main .cards .card .card-content button{
-    height: 40px;
-    margin: 20px auto 0px auto;
+    height: 30px;
+    margin: 10px auto 0px auto;
     color: white;
-    background-color: #3684de;
+    background-color: #bfc8d3;
     padding: 10px 20px;
-    border-radius: 4%;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -151,38 +180,36 @@ body {
 }
 
 .wrapper .sidebar .link a{
-    border: 1px solid rgba(100, 100, 100, 0.479);
+    border: 1px solid rgba(218, 212, 212, 0.479);
     padding: 8px;
     color: black;
 }
 
 .wrapper .sidebar .link a:hover{
-    background-color: #cecece;
+    background-color: #dddada;
 }
 
 .wrapper .sidebar .link h3{
     padding: 10px;
     color: white;
-    background-color: #3684de;    
+    background-color: #3684de;
 }
 
 .wrapper .sidebar .text {
     padding: 10px 20px 20px 20px;
 }
 
-.wrapper .sidebar .text .asal{
-    background-color: aliceblue;
-    border: 1px solid rgba(100, 100, 100, 0.479);
+.wrapper .sidebar .text .coba{
+    border: 1px solid rgba(209, 203, 203, 0.479);
 }
 
-.wrapper .sidebar .text .asal h3{
+.wrapper .sidebar .text .coba h3{
     padding: 10px;
     color: white;
     background-color: #3684de;    
 }
 
-
-.wrapper .sidebar .text .asal p{ 
+.wrapper .sidebar .text .coba p{ 
     color: black;
     padding: 0px 10px 10px 10px;
 }
@@ -191,7 +218,7 @@ body {
     display: block;
     height: 1px;
     width: 100%;
-    background-color: #767676;
+    background-color: #d3caca;
     margin: 20px 0;
 }
 
@@ -204,7 +231,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
 
 .wrapper .main .contents .content{
     display: flex;
@@ -221,6 +247,58 @@ body {
     margin: 10px 0;
 }
 
+.btn-detail {
+  display: block;
+  width: 20%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.btn {
+  padding: 7px;
+  background-color: #436eca;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #3d494b;
+}
+
+.btn-danger {
+  background-color: rgb(255, 5, 5);
+}
+
+.btn-danger:hover {
+  background-color: rgb(255, 5, 5);
+}
+
+.form {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .form form label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .form form #judul,
+  .form form textarea {
+    font-size: 16px;
+    padding: 10px;
+  }
+
 footer{
     background-color:  #000000;
     padding: 5px 20px;
@@ -234,14 +312,4 @@ footer p a {
 footer p a:hover{
     color: rgb(169, 219, 252);
     cursor: pointer;
-}
-
-.label{
-    position: absolute;
-    opacity: .1;
-    bottom: 20%;
-    font-size: 64px;
-    left: 25%;
-    color: black;
-    text-align: center;
 }

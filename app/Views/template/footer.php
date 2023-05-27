@@ -9,7 +9,7 @@
 
             </div>
                 <div class="text">
-                    <div class="asal">
+                    <div class="coba">
                     <h3 class="title">Widget Text</h3>
                     <p>Vestibulum lorem elit, iaculis in nisl volutpat,
             malesuada tincidunt arcu. Proin in leo fringilla, vestibulum mi porta,

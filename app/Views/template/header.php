@@ -8,7 +8,7 @@
 <body>
     <div class="container">
     <header class="header"> 
-        <h1>Layout Sederhana</h1>
+        <h1>Portal Berita</h1>
     </header>
     <nav class="navbar">
         <a class="active" href="home">Home</a>

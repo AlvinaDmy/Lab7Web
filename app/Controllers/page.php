@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Controllers;
+
 class Page extends BaseController
 {
     public function about()
@@ -7,8 +9,8 @@ class Page extends BaseController
         return view('about', [
             'title' => 'Halaman About',
             'content' => 'Ini adalah halaman about yang menjelaskan tentang isi
-            halaman ini.'
-            ]);
+        halaman ini.'
+        ]);
     }
     public function contact()
     {
@@ -20,6 +22,6 @@ class Page extends BaseController
     }
     public function tos()
     {
-        echo "ini halaman Term of Services";
+        echo "Ini halaman Term of Services";
     }
 }
